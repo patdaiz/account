@@ -8,8 +8,8 @@ body{
 }
 
 #side-nav{
-min-width: 115px;
-max-width: 115px;
+min-width: 170px;
+max-width: 170px;
 }
 .content{
 min-height: 100vh;
@@ -24,9 +24,16 @@ color: white;
 
 }
 .div-left-align{
-float:right;
+color:white;
 }
-
+.div-left-align:hover{
+color:white;
+}
 .row-sizes-first{
 height:12rem;
+}
+.lv{
+border-radius:5px;
+background: white;
+padding:5px;
 }
