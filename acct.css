@@ -1,0 +1,25 @@
+body{
+
+
+}
+
+.main-container{
+
+}
+
+#side-nav{
+min-width: 200px;
+max-width: 200px;
+}
+.content{
+min-height: 100vh;
+width: 100%;
+background-color:#A8D1D1;
+}
+.h1-head{
+color: white;
+}
+
+.hriz{
+
+}
