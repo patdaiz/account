@@ -27,7 +27,7 @@ color: white;
 color:white;
 }
 .div-left-align:hover{
-color:white;
+color:red;
 }
 .row-sizes-first{
 height:12rem;
@@ -36,4 +36,10 @@ height:12rem;
 border-radius:5px;
 background: white;
 padding:5px;
+}
+
+.img-1{
+width:30%;
+height:50%;
+border-radius: 40%;
 }
