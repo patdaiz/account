@@ -46,6 +46,7 @@ color: white;
 .sec{
 height:4rem;
 width:100%;
+background: #fff;
 }
 .hriz{
 
@@ -90,5 +91,6 @@ border-radius: 100%;
   .sec{
   height:4rem;
   width:100%;
+background: #000;
   }
 }
