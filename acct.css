@@ -76,7 +76,7 @@ height:80%;
 border-radius: 100%;
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:500px){
 
   .content {
   background-color:#E8F3D6;
