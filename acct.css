@@ -45,7 +45,7 @@ color: white;
 }
 .sec{
 height:4rem;
-
+width:100%;
 }
 .hriz{
 
@@ -83,7 +83,12 @@ border-radius: 100%;
   }
 
   #side-nav{
-  min-width: 200px;
-  max-width: 200px; 
+  min-width: 175px;
+  max-width: 175px;
+  }
+
+  .sec{
+  height:4rem;
+  width:100%;
   }
 }
