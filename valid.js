@@ -13,7 +13,7 @@ var password = document.getElementById("pass").value;
 var name = document.getElementById("name").value;
 var length = document.getElementById("length").value;
 if(password== "27527274jo" && name=="jonathanc" || length >=8) {
-alert("Login Successful");
+alert("Login Successful.....WELCOME TO YOUR ACCOUNT");
 alert("welcome jonathan");
 window.location.replace("account.html");
 }
