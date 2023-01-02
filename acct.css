@@ -1,0 +1,146 @@
+
+body{
+color:#fff;
+}
+
+.marquee-text-style{
+font-style: italic;
+}
+
+.img-11{
+width:15%;
+height:70%;
+border-radius: 100%;
+margin:0 auto;
+}
+
+.forms{
+height:50%;
+margin:0 auto;
+padding:70px 70px 0 70px;
+text-align: center;
+
+
+}
+
+.main-container{
+
+}
+
+
+.position-right{
+float:right;
+position: relative;
+bottom:20px;
+right:40px;
+}
+
+.inl{
+display: inline-block;
+}
+
+#side-nav{
+min-width: 170px;
+max-width: 170px;
+}
+
+.design{
+background-color:blue;
+color:white;
+width:185px;
+text-align: center;
+border-radius:5%;
+border:1px solid blue;
+}
+.border-none{
+border:none;
+}
+
+.col-img{
+width:90%;
+height: 15rem;
+position: relative;
+bottom:60px;
+opacity: 50%;}
+
+.design:hover{
+color:white;
+}
+
+.logo-image{
+border-radius:5%;
+width:150px;
+height:50px;
+margin-left:15px;
+}
+
+.content{
+min-height: 100vh;
+width: 100%;
+background:#000 ;
+opacity: 70%;
+}
+.h1-head{
+color: white;
+}
+.sec{
+height:4rem;
+width:100%;
+background: #000;
+}
+.hriz{
+
+}
+.div-left-align{
+color:white;
+}
+.div-left-align:hover{
+color:red;
+}
+.row-sizes-first{
+height:10rem;
+color:#fff;
+}
+
+.row2-sizes-first{
+height:12rem;
+}
+.lv{
+border-radius:5px;
+background: white;
+padding:5px;
+}
+
+.img-1{
+width:30%;
+height:100%;
+border-radius: 100%;
+}
+
+@media only screen and (max-width:700px){
+
+  .content {
+  background-color:#000;
+  }
+
+  #side-nav{
+  min-width: 175px;
+  max-width: 175px;
+  }
+
+  .sec{
+  height:4rem;
+  width:100%;
+background: #000;
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+  }
+
+  .img-11{
+  width:20%;
+  height:45%;
+  border-radius: 100%;
+  margin:0 auto;
+  }
+
+}
