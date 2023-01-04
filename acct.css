@@ -40,8 +40,8 @@ display: inline-block;
 }
 
 #side-nav{
-min-width: 170px;
-max-width: 170px;
+min-width: 90px;
+max-width: 95px;
 }
 
 .design{
@@ -106,9 +106,10 @@ color:#fff;
 height:12rem;
 }
 .lv{
+background:white;
+width:0px;
 border-radius:5px;
-background: white;
-padding:5px;
+font-weight:bold;
 }
 
 .img-1{
@@ -117,15 +118,15 @@ height:100%;
 border-radius: 100%;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:700){
 
   .content {
   background-color:#000;
   }
 
   #side-nav{
-  min-width: 175px;
-  max-width: 175px;
+  min-width: 98px;
+  max-width: 98px;
   }
 
   .sec{
