@@ -3,7 +3,7 @@ padding:0;
 
 }
 .forms{ width: 250px;
-height: 455px;
+height: 465px;
 color: #fff;
 background: linear-gradient(rgba(0, 0, 0, 0.5)90%,rgba(0, 0, 0, 0.5)90% ), url(2.jpg);
 position:absolute;
@@ -47,8 +47,8 @@ padding-top:18px;
   }
 
   .forms input[type="submit"] {
-  width: 40%;
-  margin-left: 72px;
+  width: 70%;
+  margin-left: 35px;
   border:none;
   height: 40px;
   color: #fff;
@@ -57,7 +57,7 @@ margin-top:10px;
   padding:5px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 15px;
+  border-radius: 5px;
   }
 
   .forms input[type="submit"]:hover{
