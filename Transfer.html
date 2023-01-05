@@ -1,79 +1,34 @@
-*{ margin:0;
-padding:0;
-
-}
-.forms{ width: 250px;
-height: 455px;
-color: #fff;
-background: linear-gradient(rgba(0, 0, 0, 0.5)90%,rgba(0, 0, 0, 0.5)90% ), url(2.jpg);
-position:absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-padding: 30px 25px;
-border-radius: 10px;
-
-}
-.forms h1{ ;
-text-align: center;
-padding-left: 11px;
-font-size: 1.5rem;
-color:#66ff00;
-margin-bottom: 20px;
-}
-
-.forms input{
-width: 100%;
-height: 20px;
-padding-top:5px;
-background: transparent;
-border-bottom: 1px solid #fff;
-border-top: none;
-border-left: none;
-border-right: none;
-color: #fff;
-/*question */
-outline: none;
-font-size: 15px;
-letter-spacing:1px;
-}
-
-.paragraph{
-  padding-bottom:10px;
-}
-.forms p{
-padding-top:18px;
-  }
-
-  .forms input[type="submit"] {
-  width: 40%;
-  margin-left: 72px;
-  border:none;
-  height: 40px;
-  color: #fff;
-  background: #000;
-margin-top:10px;
-  padding:5px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 15px;
-  }
-
-  .forms input[type="submit"]:hover{
-  background: #66ff00;
-  cursor: pointer;
-  color:#fff;
-  font-weight: bold;
-  }
-
-body {  margin: 0;
-padding:0;
-background-position: center;
-background-size: auto;
-height: 100vh;
-background: linear-gradient(rgba(0, 0, 0, 0.4)50%, rgba(0, 0, 0, 0.4)50%), url(3.jpg);
-font-family: sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="acct.css" />
+  </head>
 
 
+  <body>
+<div class="forms">
+<div>
+  <h1>ENTER TRANSFER INFORMATION</h1>
+</div>
+<form action="" class"" method="post" enctype="text/plain">
+<p class="paragraph">Account Name</p>
+<input type="text" name="Account Name" placeholder="Enter Account Name" required />
+<p>Account Number</p>
+<input type="text" name="Account Number" placeholder="Enter Account Number" required />
+<p>Transfer Bank Name</p>
+<input type="text" name="Transfer Bank Name" placeholder="Enter Your Bank Name" required />
+<p>Email Notification</p>
+<input type="email" name="Email Notification" placeholder="Enter Your Email" required/>
+<p>Description</p>
+<textarea name="message" id="message" placeholder="Description" style="height:50px;  resize: vertical; width:100%;" /> </textarea>
+<input type="submit" name=""  value="Transfer" />
+</form>
+</div>
 
+
+  </body>
+</html>
