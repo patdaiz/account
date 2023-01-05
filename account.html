@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account</title>
+  <title>bank of thailand</title>
+  <link rel="icon" type="image/x-icon" href="fav.jpg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/4a46766abf.js" crossorigin="anonymous">
-  <script src="vali.js"></script>
+  <script src="valid.js"></script>
 <style>
   body { background: linear-gradient(rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(3.jpg); background-position:center; background-size: auto; height: 100vh; margin:0; padding:0;
 }
@@ -17,18 +18,18 @@
 
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container-fluid" style="display:inline;">
+  <nav class="pt-4 navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
    <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a href="" class=" navbar-brand">CIMB Thai Bank</a>
+  <a href="" class=" navbar-brand"> CIMB Thai Bank of thailand</a>
 </div>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <ul class="ms-auto navbar-nav  me-5 px-3 pX-5">
-        <li class="nav-item"><a href="" class="nav-link">DASHBOARD|</a></li>
-        <li class="nav-item"> <a href="" class="nav-link">TRANSFER|</a></li>
-        <li class="nav-item"><a href="" class="nav-link">HISTORY|</a></li>
+    <ul class="ms-auto navbar-nav me-5 ps-2">
+        <li class="nav-item"><a href="account.html" class="nav-link">DASHBOARD</a></li>
+        <li class="nav-item"> <a href="Transfer.html" class="nav-link">TRANSFER</a></li>
+        <li class="nav-item"><a href="" class="nav-link">HISTORY</a></li>
         <li class="nav-item"><a href="" class="nav-link">ACCT_NO</a></li>
     </ul>
     </div>
@@ -36,11 +37,16 @@
 <div class="container pt-5">
   <div class="row text-light">
     <div class="col-lg-4 col-md-4">
-  <div class=""style=";"><h1>DASHBOARD</h1></div>
+  <div class="pe-3 pb-2"><h1 class="shadow-lg">DASHBOARD</h1></div>
 </div>
 
   <div class="col-lg-4 col-md-4">
-    <div class="" style=";"><h1>BALANCE</h1></div>
+    <div class=""><h5 class="me-0" style="background:; display:inline-block; width:6.5rem;
+border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;">BALANCE</h5>
+<h2 style=" display:inline-block; opacity:75%; width:10.6rem;
+border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo">$15,000,000</h2>
+<p> <button class="text-light btn btn-danger" style="opacity:75%;" onclick="hidefunction()"><i class="pe-1 fa-sharp fa-solid fa-arrow-up-from-bracket"></i>Hide Balance</button></p>
+</div>
 </div>
 
 <div class="col-lg-4  col-md-4">
@@ -108,5 +114,16 @@
 
 </div>
 
+<script>
+function hidefunction() {
+  var y = document.getElementById("demo");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
+
+</script>
 </body>
 </html>
