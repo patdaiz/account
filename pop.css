@@ -1,6 +1,6 @@
 .popup{
     background-color: #ffffff;
-    width: 250px;
+    width: 500px;
     padding: 30px 40px;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -10,6 +10,11 @@
     font-family: "Poppins",sans-serif;
     display: none;
     text-align: center;
+}
+.showme-popup {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
 }
 .popup button{
     display: block;
@@ -37,4 +42,19 @@
     color: #ffffff;
     text-decoration: none;
     padding: 5px 0;
+}
+@media screen and (max-width: 700px) {
+  .popup{
+      background-color: #ffffff;
+      width: 270px;
+      padding: 30px 40px;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+      border-radius: 8px;
+      font-family: "Poppins",sans-serif;
+      display: none;
+      text-align: center;
+  }
 }
