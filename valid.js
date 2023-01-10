@@ -35,3 +35,11 @@ document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 }
 )
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
