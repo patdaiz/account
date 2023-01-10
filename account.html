@@ -10,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/4a46766abf.js" crossorigin="anonymous">
   <script src="valid.js"></script>
+  <link rel="stylesheet" href="pop.css" />
 <style>
   body { background: linear-gradient(rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(3.jpg); background-position:center; background-size: auto; height: 100vh; margin:0; padding:0;
 }
@@ -23,7 +24,7 @@
    <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a href="" class=" navbar-brand"> CIMB Thai Bank of thailand</a>
+  <a href="" class=" navbar-brand shadow-lg" > CIMB Thai Bank of thailand</a>
 </div>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="ms-auto navbar-nav me-5 ps-2">
@@ -42,9 +43,9 @@
 
   <div class="col-lg-4 col-md-4">
     <div class=""><h5 class="me-0" style="background:; display:inline-block; width:6.5rem;
-border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;">BALANCE</h5>
+border-radius:10%; box-shadow:5px 3px 5px 2px #000;">BALANCE</h5>
 <h2 style=" display:inline-block; opacity:75%; width:10.6rem;
-border-radius:10%; box-shadow:5px 3px 5px 2px #000;" id="demo">$15,000,000</h2>
+border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo">$15,000,000</h2>
 <p> <button class="text-light btn btn-danger" style="opacity:75%;" onclick="hidefunction()"><i class="pe-1 fa-sharp fa-solid fa-arrow-up-from-bracket"></i>Hide Balance</button></p>
 </div>
 </div>
@@ -63,21 +64,21 @@ border-radius:10%; box-shadow:5px 3px 5px 2px #000;" id="demo">$15,000,000</h2>
     <div class="col-lg-4 col-md-4 col-sm-6">
   <div class="bg-light ps-4 pt-4"style="height:170px; opacity:75%;">
 <h5 style="display:inline;">Total Deposit</h5>
-<h4>$00000 <i class=" fa-2x fa-solid fa-hand-holding-dollar"></i></h4>
+<h2>$00000 <i class=" ms-5 fa-2x fa-solid fa-hand-holding-dollar"></i></h2>
 </div>
 </div>
 
   <div class="col-lg-4 col-md-4 col-sm-6">
     <div class="bg-light ps-4 pt-4"style="height:170px; opacity:75%;">
     <h5 style="display:inline;">Total Withdraw</h5>
-    <h4>$00000 <i class="fa-2x fa-solid fa-money-bill-transfer"></i></h4>
+    <h2>$00000 <i class="ms-5 fa-2x fa-solid fa-money-bill-transfer"></i></h2>
     </div>
 </div>
 
 <div class="col-lg-4  col-md-4 col-sm-6">
   <div class="bg-light ps-4 pt-4"style="height:170px; opacity:75%;">
   <h5 style="display:inline;">Total Balance</h5>
-  <h4>$00000 <i class=" fa-2x fa-solid fa-coins"></i></i></h4>
+  <h2>$00000 <i class="ms-5 fa-2x fa-solid fa-coins"></i></i></h2>
   </div>
 </div>
 </div>
@@ -104,15 +105,26 @@ border-radius:10%; box-shadow:5px 3px 5px 2px #000;" id="demo">$15,000,000</h2>
 </div>
 
 <div class="col-lg-4  col-md-4 col-sm-6">
-  <div class="bg-light p-3"style="height:150px;">
+  <div class=" p-3"style="height:230px;">
+<img src="chart1.png" class="w-100 " style="height:230px; box-shadow: 10px 10px 50px 5px #fff" />
   </div>
 </div>
 </div>
 </div>
 
-<div style="height:10%; width:100%; background:#000; margin-top:20px;">
+<div style="height:10%; width:100%; background:#000; margin-top:40px;">
 
 </div>
+<div class="popup">
+        <button id="close">&times;</button>
+          <div class="text-right" style="text-align:center;">
+        <img src="passport.jpg" style="width:30%; height:50%; border-radius:100%;" />
+        </div>
+      <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
+        </p>
+        <a class="af"href="#">Let's Go</a>
+    </div>
 
 <script>
 function hidefunction() {
@@ -125,5 +137,7 @@ function hidefunction() {
 }
 
 </script>
+<script src="valid.js"></script>
+
 </body>
 </html>
