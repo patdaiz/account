@@ -1,5 +1,5 @@
 .popup{
-    background-color: #ffffff;
+    background: linear-gradient(rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
     width: 500px;
     padding: 30px 40px;
     position: absolute;
@@ -13,7 +13,7 @@
 }
 .showme-popup {
   display: none;
-  border: 3px solid #f1f1f1;
+  border: 3px solid #fff;
   z-index: 9;
 }
 .popup button{
@@ -38,15 +38,15 @@
     position: relative;
     margin: 10px auto;
     text-align: center;
-    background-color: #0f72e5;
+    background-color: red;
     color: #ffffff;
     text-decoration: none;
-    padding: 5px 0;
+    padding: 5px 30px;
 }
 @media screen and (max-width: 700px) {
   .popup{
-      background-color: #ffffff;
-      width: 270px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+      width: 310px;
       padding: 30px 40px;
       position: absolute;
       transform: translate(-50%,-50%);
