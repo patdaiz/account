@@ -12,9 +12,9 @@ function validate(){
 var password = document.getElementById("pass").value;
 var name = document.getElementById("name").value;
 var length = document.getElementById("length").value;
-if(password== "27527274jo" && name=="jonathanc" || length >=8) {
+if(password== "Amin2020" && name=="Amin" || length >=8) {
 alert("Login Successful");
-alert("welcome jonathan");
+alert("welcome Amin");
 window.location.replace("account.html");
 }
 else{
@@ -42,4 +42,9 @@ function openForm() {
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+}
+
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
