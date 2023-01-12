@@ -14,6 +14,13 @@
 <style>
   body { background: linear-gradient(rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(3.jpg); background-position:center; background-size: auto; height: 100vh; margin:0; padding:0;
 }
+table,td {
+border:1px solid red}
+
+tr:hover{
+background:#CCCCFF
+;
+}
 </style>
 </head>
 
@@ -25,9 +32,8 @@
   <script type="text/javascript">
 
     function googleTranslateElementInit(){
-new google.translate.TranslateElement({pageLanguage: 'en'},  'google_translate_element');  }
+new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');  }
   </script>
-
   <script type="text/javascript"  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
   </script>
 </div>
@@ -51,16 +57,6 @@ new google.translate.TranslateElement({pageLanguage: 'en'},  'google_translate_e
     </ul>
     </div>
 </nav>
-<div id="google_translate_element"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
- new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 
 <div class="container pt-5">
   <div class="row text-light">
@@ -74,14 +70,18 @@ DASHBOARD</h1></div>
     <div class=""><h5 class="me-0" style="background:; display:inline-block; width:6.5rem;
 border-radius:10%; box-shadow:5px 3px 5px 2px #000;">BALANCE</h5>
 <h2 style=" display:inline-block; opacity:75%; width:10.6rem;
-border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo">$15,000,000</h2>
+border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo">$15,000,000.00</h2>
 <p> <button class="text-light btn btn-danger" style="opacity:75%;" onclick="hidefunction()"><i class="pe-1 fa-sharp fa-solid fa-arrow-up-from-bracket"></i>Hide Balance</button></p>
 </div>
 </div>
 
 <div class="col-lg-4  col-md-4">
-  <div class="text-right" style="height:100%;text-align:center;">
+  <div class="text-center" style="height:100%;text-align:center;">
 <img src="passport.jpg" style="width:30%; height:50%; border-radius:100%;" />
+<h6>Name:<span class="ms-2">joseveloso</span></h6>
+<h5>Account number:<span class="ms-2 bg-info">002-840-354</span></h5>
+<h6>Status:<span class="ms-2 bg-danger">ACCESS BLOCK</span></h6>
+<h6>Next-Onwership:<span class="ms-2 bg-danger">Next of KIN</span></h6>
 </div>
 </div>
 </div>
@@ -91,23 +91,101 @@ border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo"
 <div class="container pt-5 shadow">
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-6">
-  <div class="bg-light ps-4 pt-4"style="height:170px; opacity:75%;">
+  <div class="rounded bg-light ps-1 pt-4"style="height:200px; opacity:75%;">
 <h5 style="display:inline;">Total Deposit</h5>
-<h2>$00000 <i class=" ms-5 fa-2x fa-solid fa-hand-holding-dollar"></i></h2>
+<h2 class="">$15,000,002.12 <i class=" ms-3 fa-2x fa-solid fa-hand-holding-dollar"></i></h2>
+
+<p>
+<button class="shadow w-75 btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamp" aria-expanded="false" aria-controls="collapseExample">
+Deposit History
+</button>
+</p>
+<div class="collapse" id="collapseExamp">
+<div class="bg-dark text-light card card-body">
+<table class="">
+<tr>
+<th>Name</th>
+<th>Reciver Account</th>
+<th>Amount</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>Eren: </td>
+<td>006-357562-395 </td>
+<td>$20,000.00</td>
+<td>26-feb,2020</td>
+</tr>
+<tr>
+<td>Ayaz: </td>
+<td>003-357562-395 </td>
+<td>$400,000.00</td>
+<td>14-jun,2020</td>
+</tr>
+
+<tr>
+<td>Deniz: </td>
+<td>001-846295-043 </td>
+<td>$100,000.00</td>
+<td>01-Nov,2020</td>
+</tr>
+</table>
+<a href="account.html"><p><input class="mt-2 btn btn-primary w-100" type="submit" mame="" value="Hide Balance" /></p></a>
+</div>
+</div>
+
 </div>
 </div>
 
   <div class="col-lg-4 col-md-4 col-sm-6">
-    <div class="bg-light ps-4 pt-4"style="height:170px; opacity:75%;">
+    <div class="rounded bg-light ps-1 pt-4"style="height:200px; opacity:75%;">
     <h5 style="display:inline;">Total Withdraw</h5>
-    <h2>$00000 <i class="ms-5 fa-2x fa-solid fa-money-bill-transfer"></i></h2>
+    <h2 class="">$25,157,324.45 <i class="ms-3 fa-2x fa-solid fa-money-bill-transfer"></i></h2>
+    <p>
+  <button class="shadow w-75 btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExam" aria-expanded="false" aria-controls="collapseExample">
+  Transfer History
+  </button>
+</p>
+<div class="collapse" id="collapseExam">
+  <div class=" rounded bg-dark text-light card card-body">
+<table class="">
+<tr>
+  <th>Name</th>
+  <th>Reciver Account</th>
+  <th>Amount</th>
+<th>Date</th>
+</tr>
+
+  <tr>
+    <td>Eren: </td>
+    <td>006-357562-395 </td>
+    <td>$20,000.00</td>
+    <td>26-feb,2020</td>
+  </tr>
+  <tr>
+    <td>Ayaz: </td>
+    <td>003-357562-395 </td>
+    <td>$400,000.00</td>
+    <td>14-jun,2020</td>
+  </tr>
+
+  <tr>
+    <td>Deniz: </td>
+    <td>001-846295-043 </td>
+    <td>$100,000.00</td>
+    <td>01-Nov,2020</td>
+  </tr>
+</table>
+<a href="account.html"><p><input class="mt-2 btn btn-primary w-100" type="submit" mame="" value="Hide Balance" /></p></a>
+  </div>
+</div>
     </div>
 </div>
 
 <div class="col-lg-4  col-md-4 col-sm-6">
-  <div class="bg-light ps-4 pt-4"style="height:170px; opacity:75%;">
+  <div class=" rounded bg-light ps-1 pt-4"style="height:200px; opacity:75%;">
   <h5 style="display:inline;">Total Balance</h5>
-  <h2>$00000 <i class="ms-5 fa-2x fa-solid fa-coins"></i></i></h2>
+  <h2>$$15,000,000.00 <i class="ms-3 fa-2x fa-solid fa-coins"></i></i></h2>
   </div>
 </div>
 </div>
@@ -118,7 +196,7 @@ border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo"
 <div class="container pt-5">
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-6">
-  <div class=" p-3 shadow" style="height:170px;">
+  <div class=" rounded p-3 shadow" style="height:170px;">
 <h5>Transfer</h5>
 <input class="w-100 py-2 mt-3" type="text" name="" placeholder="Transfer Amount" />
 <a href="account.html"><p><input class="mt-2 btn btn-primary w-100" type="submit" mame="" value="Transfer" /></p></a>
@@ -126,7 +204,7 @@ border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo"
 </div>
 
   <div class="col-lg-4 col-md-4 col-sm-6">
-    <div class="shadow p-3"style="height:170px;">
+    <div class="rounded shadow p-3"style="height:170px;">
     <h5>Hidden Amount</h5>
     <input class="py-2 mt-3 w-100"type="text" name="" placeholder="Amount" />
     <a href="account.html"><p><input class="mt-2 btn btn-primary w-100" type="submit" mame="" value="Hide Balance" /></p></a>
@@ -134,8 +212,8 @@ border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo"
 </div>
 
 <div class="col-lg-4  col-md-4 col-sm-6">
-  <div class=" p-3"style="height:230px;">
-<img src="chart1.png" class="w-100 " style="height:230px; box-shadow: 10px 10px 50px 5px #fff" />
+  <div class="rounded p-3"style="height:230px;">
+<img src="chart1.png" class="w-100 rounded" style="height:230px; box-shadow: 10px 10px 50px 5px #fff" />
   </div>
 </div>
 </div>
@@ -144,23 +222,58 @@ border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo"
 <div style="height:10%; width:100%; background:#000; margin-top:40px;">
 
 </div>
-<div class="popup">
-        <button id="close">&times;</button>
+<div class="popup rounded">
+        <button id="close" class="text-danger">&times;</button>
 
           <div class="text-right" style="text-align:center;">
         <img src="passport.jpg" style="width:30%; height:50%; border-radius:100%;" />
         <h2 style="color:red">Sorry!! No Access</h2>
       <h3 style="color:red">  Account Block since 2019</h3>
         </div>
-       <h3>Follow The Process </h3>
-       <h3>Provide Us With Requested Details And Unblock Funds </h3>
-        <a class="af"href="#" onclick="openForm()">Unblock</a>
-<div id="myForm" class="showme-popup">
-<h6> legal document</h6>
-<h6> legal document</h6>
-<h6> legal document</h6>
-  <a class="af"href="#"  onclick="closeForm()">x cancel </a>
-</div>
+
+        <p>
+          <button class="btn w-100 bg-danger btn-primary" style="margin-right:60px;"type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampl" aria-expanded="false" aria-controls="collapseExample">
+    Unblock  </button>
+        </p>
+        <div class="collapse" id="collapseExampl">
+          <div class="card card-body">
+<table>
+<tr>
+  <th>PROVIDE US WITH THESE PROOFS </th>
+</tr>
+
+<tr>
+  <th>AS The NEXT OF KIN TO UNBLOCK</th>
+</tr>
+
+<tr>
+  <th> THE ACCOUNT & HAVE ACCESS </th>
+</tr>
+
+<tr>
+  <th> TO THE MONEY </th>
+</tr>
+<tr>
+  <td>
+            <ol>
+              <li>STATE CLEARLY HIS FULL NAMES WITH US IN OUR DATABASE.</li>
+              <li>STATE HIS NATIONALITY.</li>
+              <li>WHAT IS THE MOTHER'S MAIDEN NAME OF LATE MR. ALLEN TERA.</li>
+              <li>HOW OLD WAS LATE MR.ALLEN TERA. AND THE YEAR WHEN THE DEPOSIT WAS MADE.</li>
+              <li>STATE THE COMPANY NAME OF LATE MR.ALLEN TERA.</li>
+              <li>STATE TO US THE SECRET CODE OF THE DEPOSIT.</li>
+              <li>PRODUCE A SCAN COPY OF HIS COMPANY CERTIFICATE OF INC.HERE IN BANGKOK,THAILAND AND DEATH CERTIFICATE.</li>
+              <li>PRODUCE A SCAN COPY OF THE DEPOSIT VOUCHER OF THE FUND.</li>
+              <li>STATE CLEARLY HIS CURRENT RESIDENTIAL ADDRESS HERE IN BANGKOK,THAILAND BEFORE HIS DEATH RECORDED IN DATABASE WITH US.</li>
+            <li>SCAN COPY OF YOUR INTERNATIONAL PASSPORT OR DRIVER'S LICENSE.</li>
+
+            </ol>
+           </td>
+        </tr>
+</table>
+          </div>
+        </div>
+
     </div>
 
 <script>
