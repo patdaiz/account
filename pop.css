@@ -2,6 +2,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
     width: 500px;
     padding: 30px 40px;
+margin-top: 160px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -47,6 +48,7 @@
   .popup{
     background: linear-gradient(rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
       width: 310px;
+      margin-top: 300px;
       padding: 30px 40px;
       position: absolute;
       transform: translate(-50%,-50%);
