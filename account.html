@@ -54,7 +54,7 @@ new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_el
 </div>
     <div class="collapse bg-dark navbar-collapse" id="navbarTogglerDemo01">
     <ul class="ms-auto navbar-nav me-5 ps-2">
-        <li class="nav-item"><a href="account.html" class="nav-link">DASHBOARD</a></li>
+        <li class="nav-item "><a href="account.html" class="nav-link">DASHBOARD</a></li>
         <li class="nav-item"> <a href="Transfer.html" class="nav-link">TRANSFER</a></li>
         <li class="nav-item"><a href="history.html" class="nav-link">HISTORY</a></li>
         <li class="nav-item"><a href="acct.html" class="nav-link">ACCT_NO</a></li>
@@ -84,10 +84,14 @@ border-radius:10%; box-shadow:5px 3px 5px 2px #000;text-align:center;" id="demo"
 <div class="col-lg-4  col-md-4">
   <div class="text-center" style="height:100%;text-align:center;">
 <img src="passport.jpg" style="width:30%; height:50%; border-radius:100%;" />
-<h6>Name:<span class="ms-2">joseveloso</span></h6>
+<h6>Name:<span class="ms-2">Mustafa Amin</span></h6>
 <h5>Account number:<span class="ms-2 bg-info">002-840-354</span></h5>
 <h6>Status:<span class="ms-2 bg-danger">ACCESS BLOCK</span></h6>
 <h6>Next-Onwership:<span class="ms-2 bg-danger">Next of KIN</span></h6>
+<div class="pt-2">
+  <button class="btn btn-primary me-3" onclick="deposits()">Deposit</button>
+  <button class="btn btn-primary" onclick="transfers()">Transfer</button>
+</div>
 </div>
 </div>
 </div>
@@ -225,9 +229,13 @@ Deposit History
 </div>
 </div>
 
-<div style="height:10%; width:100%; background:#000; margin-top:40px;">
-
+<div id="CONTACT"style="color:white; padding:30px;text-align: center; width:100%; background:#000; margin-top:40px;">
+  <h6 class="pt-2 bg-danger py-3">CONTACT SUPPORT FOR HELP</h6>
+  <h6 class="pt-2">Bank-Manager : <span class="ms-1 "><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Thomas-Arromdee.SCBANK.THAI@financier.com</a></span></h6>
+  <h6 class="pt-2">Bank-Headquarters :<span class="ms-1 "><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Headquarter_siam-Commercial-bank.thail@asia.com</a> </span></h6>
 </div>
+
+
 <div class="popup rounded">
         <button id="close" class="text-danger">&times;</button>
 
@@ -235,6 +243,7 @@ Deposit History
         <img src="passport.jpg" style="width:30%; height:50%; border-radius:100%;" />
         <h2 style="color:red">Sorry!! No Access</h2>
       <h3 style="color:red"> unlock the dormant account to access the fund </h3>
+      <a href="#CONTACT" class="btn btn-primary">CONTACT-SUPPORT</a>
         </div>
         <p>
           <button class="btn w-100 bg-danger btn-primary" style="margin-right:60px;"type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampl" aria-expanded="false" aria-controls="collapseExample">
@@ -301,12 +310,36 @@ else{
 return;
 }
 }
+
+function deposits() {
+  let jonathan = prompt("DEPOSITS AMOUNT?:",);
+if(jonathan<="8,000,000")  {
+alert("SORRY!! CLICK UNBLOCK TO UNLOCK THE DORMANT ACCOUNT");
+}
+else{
+ alert("ENTER AMOUNT");
+return;
+}
+}
+
+
+
+function transfers() {
+  let jonathan = prompt("TRANSFER AMOUNT?:",);
+if(jonathan<="8,000,000")  {
+alert("SORRY!! CLICK UNBLOCK TO UNLOCK THE DORMANT ACCOUNT");
+}
+else{
+ alert("ENTER AMOUNT");
+return;
+}
+}
 </script>
     <script>
     function redirectFunc() {
-      window.location.replace("index.html");
+      window.location.replace("loginpage.html");
     }
-    setTimeout("redirectFunc()", 100000);
+    setTimeout("redirectFunc()", 80000);
   </script>
 <script src="valid.js"></script>
 
