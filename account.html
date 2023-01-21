@@ -30,7 +30,7 @@ background:#CCCCFF
 
 
 <body>
-<div class="me-auto container">
+<div class="me-auto container bg-warning text-center w-50">
     <div id="google_translate_element"></div>
 
   <script type="text/javascript">
@@ -47,17 +47,19 @@ new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_el
 
   <nav class="pt-4 navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container-fluid">
-   <button class="navbar-toggler text-danger bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a href="" class=" navbar-brand shadow-lg pb-4" > CIMB Thai Bank of thailand</a>
+  <a href="" class=" navbar-brand shadow-lg pb-4" ><img class="ps-3 w-50 pt-4 me-auto"src="logo.jpg" /></a>
+  <button class="navbar-toggler text-danger bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
 </div>
     <div class="collapse bg-dark navbar-collapse" id="navbarTogglerDemo01">
     <ul class="ms-auto navbar-nav me-5 ps-2">
-        <li class="nav-item"><a href="account.html" class="nav-link">DASHBOARD</a></li>
+        <li class="nav-item bg-danger"><a href="account.html" class="nav-link">DASHBOARD</a></li>
         <li class="nav-item"> <a href="Transfer.html" class="nav-link">TRANSFER</a></li>
         <li class="nav-item"><a href="history.html" class="nav-link">HISTORY</a></li>
         <li class="nav-item"><a href="acct.html" class="nav-link">ACCT_NO</a></li>
+        <li class="nav-item"><a href="" class="nav-link" onclick="SECURITies()">SECURITY</a></li>
+
     </ul>
     </div>
 </nav>
@@ -232,12 +234,11 @@ Deposit History
           <div class="text-right" style="text-align:center;">
         <img src="passport.jpg" style="width:30%; height:50%; border-radius:100%;" />
         <h2 style="color:red">Sorry!! No Access</h2>
-      <h3 style="color:red">  Account Block since 2019</h3>
+      <h3 style="color:red"> unlock the dormant account to access the fund </h3>
         </div>
-
         <p>
           <button class="btn w-100 bg-danger btn-primary" style="margin-right:60px;"type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampl" aria-expanded="false" aria-controls="collapseExample">
-    Unblock  </button>
+    Click Unblock  </button>
         </p>
         <div class="collapse" id="collapseExampl">
           <div class="card card-body">
@@ -289,8 +290,24 @@ function hidefunction() {
     y.style.display = "none";
   }
 }
-
+function SECURITies() {
+  let person = prompt("What do you want to change?:",);
+if(person=="Password")  {
+alert("Sorry Go To Login page");
+window.location.replace("loginpage.html");
+}
+else{
+ alert("Sorry It can Not Be Change");
+return;
+}
+}
 </script>
+    <script>
+    function redirectFunc() {
+      window.location.replace("loginpage.html");
+    }
+    setTimeout("redirectFunc()", 80000);
+  </script>
 <script src="valid.js"></script>
 
 </body>
